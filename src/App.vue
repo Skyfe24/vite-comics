@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppHero from './components/AppHero.vue'
 import AppMain from './components/AppMain.vue'
+import ComicCard from './components/ComicCard.vue'
 export default {
   data() {
     return {
@@ -9,7 +10,7 @@ export default {
     }
   },
   components: {
-    AppHeader, AppHero, AppMain
+    AppHeader, AppHero, AppMain, ComicCard
   }
 }
 
@@ -19,7 +20,7 @@ export default {
   <!-- header-->
   <AppHeader />
   <AppHero />
-
+  <ComicCard />
   <!-- main-->
   <AppMain />
 </template>

@@ -64,49 +64,25 @@ export default {
     <!-- header-->
     <header>
         <nav>
-            <div class="container" id="navbar">
+            <div class="container flex justify-between" id="navbar">
                 <div class="logo"><a href><img src="../assets/img/dc-logo.png" alt="logo DC comics"></a> </div>
 
-                <div class="links">
-                    <ul> QUI
-                        <li v.for="link in [NavbarLinks]" :key="link.text"> <a href="link.url"> {{ link.text }} </a></li>
+                <div class="links flex justify-between ">
+                    <ul>
+                        <li v-for="link in NavbarLinks" :key="link.text"> <a href="link.url"> {{ link.text }} </a></li>
 
 
 
                     </ul>
 
 
-
-
-
                 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
             </div>
 
 
-
-
-
-
-
-
-
-
-
         </nav>
-        <h1>ciao ciao belli 20000</h1>
     </header>
 </template>
 
@@ -115,9 +91,37 @@ export default {
 .container {
     max-width: 1290px;
     margin: 0 auto;
+    height: 100px;
 }
 
 h1 {
     color: rgb(6, 233, 157)
 }
-</style>s
+
+li {
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    line-height: 70px;
+
+    color: grey;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+
+
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+</style>

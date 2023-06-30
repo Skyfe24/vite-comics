@@ -11,7 +11,7 @@ export default {
     AppHeader
   }
 }
-n
+
 </script>
 
 <template>

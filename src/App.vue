@@ -20,7 +20,7 @@ export default {
   <!-- header-->
   <AppHeader />
   <AppHero />
-  <ComicCard />
+  <ComicCard comics="ci siamo" />
   <!-- main-->
   <AppMain />
 </template>

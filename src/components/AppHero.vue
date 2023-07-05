@@ -1,9 +1,5 @@
 
-<template>
-    <div class="jumbo">
-        <img src="../assets/img/jumbotron.jpg" alt="">
-    </div>
-</template>
+<template></template>
 
 
 <style scoped>
